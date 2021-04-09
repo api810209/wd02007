@@ -13,21 +13,29 @@ nav a{
     display: block;
     margin: 30px 0px;
     text-decoration: none;
-    color: white;
+    color: #fffaee;
     text-shadow: 0 0 20px #404040;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
+    font-weight: bolder;
 }
 .logo{
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
-header p{
-    width: 350px;
-    word-break: keep-all;
+.header-txt{
+  margin-top: 50px;
+}
+.header-txt span{
     text-align: center;
-    line-height: 30px;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    color: #6f4f2b;
     display: block;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .booking{
@@ -45,9 +53,12 @@ header p{
     padding: 60px 0 0 30px;
 }
 .booking-form h2{
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #404040;
 }
 .booking-form-content{
     width: 320px;
@@ -61,8 +72,12 @@ header p{
     flex-direction: column;
     margin: 10px 0px;
 }
-.booking-form-value span{
-    padding-bottom: 5px;
+.booking-form-value span, .booking-form-select span{
+    padding-bottom: 10px;
+    color: #404040;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 200;
 }
 .booking-form-value input{
     height: 20px;
@@ -80,12 +95,15 @@ header p{
 .booking button{
     width: 152px;
     height: 40px;
-    background-color: rgba(0, 100, 0, 0.9);
+    background-color: rgba(19, 96, 50, 0.9);
     border-style: none;
     border-radius: 10px 0;
     box-shadow: 2px 2px 5px #404040;
-    color: white;
+    color: #fffaee;
     text-align: right;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
     padding-right: 20px;
     display: block;
     margin-top: 30px;
@@ -93,39 +111,184 @@ header p{
 }
 .booking-form-notice{
     width: 300px;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
     font-size: 14px;
     text-align: right;
     word-break: keep-all;
+    color: #6f4f2b;
     margin-top: 20px;
     margin-left: 15%;
     display: block;
 }
 
+.wish{
+    width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    position: relative;
+    margin-bottom: 150px;
+}
 .wish-notice{
     text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    color: #6f4f2b;
+    display: block;
     position: relative;
-    top: 40px;
+    top: 50px;
+    z-index: 3;
 }
 .wish-book{
-    width: 1280px;
-    height: 765px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    overflow: hidden;
+    position: relative;
 }
-.wish-book-list{
+.wish-slides {
     position: absolute;
-}
-.wish-book-txt{
+    width: 600px;
+    height: 280px;
+    top: 35%;
+    list-style: none;
+    overflow: hidden;
+  }
+  .wish-slide {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     text-align: center;
-}
-.wish-book-txt span{
+    display: flex;
+    flex-direction: column;
+    color: #fffaee;
+    transition: .5s transform ease-in-out;
+  }
+  .wish-slide span{
+    margin-bottom: 40px;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+  }
+  .wish-slide p{
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+  }
+  .wish-slide:nth-of-type(2) {
+    left: 100%;
+  }
+  .wish-slide:nth-of-type(3) {
+    left: 200%;
+  }
+  input[type="radio"] {
+    position: relative;
+    display: none;
+  }
+  .wish-controls-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+  }
+  .wish-controls-visible label {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: rgba(255, 250, 238, 0.4);
+    border-radius: 15%;
+    margin: 0 10px;
+  }
+  .wish-slides input[type="radio"]:nth-of-type(1):checked ~ .wish-controls-visible label:nth-of-type(1) {
+    background-color: #fffaee;
+  }
+  .wish-slides input[type="radio"]:nth-of-type(2):checked ~ .wish-controls-visible label:nth-of-type(2) {
+    background-color: #fffaee;
+  }
+  .wish-slides input[type="radio"]:nth-of-type(3):checked ~ .wish-controls-visible label:nth-of-type(3) {
+    background-color: #fffaee;
+  }
+  .wish-slides input[type="radio"]:nth-of-type(1):checked ~ .wish-slide {
+    transform: translatex(0%);
+  }
+  .wish-slides input[type="radio"]:nth-of-type(2):checked ~ .wish-slide {
+    transform: translatex(-100%);
+  }
+  .wish-slides input[type="radio"]:nth-of-type(3):checked ~ .wish-slide {
+    transform: translatex(-200%);
+  }
+  .wish a{
     display: block;
-    margin: 60px 0px 5px 0px;
-}
-.wish-book-txt p{
+    position: absolute;
+    bottom: -30px;
+  }
+  .wish a button{
+    width: 152px;
+    height: 40px;
+    background-color: rgba(19, 96, 50, 0.9);
+    border-style: none;
+    border-radius: 10px 0;
+    box-shadow: 2px 2px 5px #404040;
+    color: #fffaee;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  footer{
+    background-color: #6f4f2b;
+    padding: 30px 0;
+    font-family: 'Dela Gothic One', cursive;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+  }
+  .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 320px;
+  }
+  .footer-inf, .footer-path{
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .footer-inf{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-inf span{
+    color: #b88919;
+    margin: 10px 0;
+  }
+  .footer-path{
+    display: flex;
+  }
+  .footer-nav-a{
+    padding: 10px 0;
+  }
+  .footer-nav-a a{
+    color: #b88919;
+    padding: 0 0 0 5px;
+  }
+  .footer-community{
+    position: relative;
+    bottom: 45px;
+    left: 30%;
+  }
+  .footer-community a{
+    padding-right: 20px;
+  }
+  p.cr{
+    text-align: center;
     display: block;
-    margin: 20px 0px 30px 0px;
-}
+    width: 100%;
+    margin-top: 20px;
+    color: #b88919;
+    font-size: 14px;
+  }

@@ -7,21 +7,28 @@
     <title>手手市集</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="">預約攤位</a>
-            <a href="">許願清單</a>
-            <a href="">商品預告</a>
-            <a href="">市場募資</a>
-            <a href="">市集位置</a>
+            <a href="#">預約攤位</a>
+            <a href="#">許願清單</a>
+            <a href="#">商品預告</a>
+            <a href="#">市場募資</a>
+            <a href="#">市集位置</a>
         </nav>
         <h1 class="logo">
-            <img src="pic/index/logo.png" alt="">
+            <a href="#"><img src="pic/index/logo.png" alt=""></a>
         </h1>
-        <p>家裡收納空間不夠，有超過一個月以上都用不到的物品又不捨得丟，想要離開螢幕前享受人際互動
-        ，覺得包裝郵寄麻煩，網購等很久又怕被騙，買了不會操作</p>
+        <div class="header-txt">
+        <span>家裡收納空間不夠</span>
+        <span>有超過一個月以上都用不到的物品，又不捨得丟</span>
+        <span>想要離開螢幕前，享受人際互動</span>
+        <span>覺得包裝郵寄麻煩</span>
+        <span>網購等很久又怕被騙，買了還不會操作</span>
+        </div>
     </header>
 
     <div class="booking">
@@ -94,50 +101,72 @@
     </div>
 
     <div class="wish">
-        <div class="wish-notice">
-            <p>不知道該如何出手？ 買賣前也可以先參考這裡</p>
-        </div>
+        <p class="wish-notice">不知道該如何出手？ 買賣前也可以先參考這裡</p>
+
         <div class="wish-book">
-            <img src="pic/index/wishimg.jpg" alt="">
-            <ul class="wish-book-list">
-                <lix class="wish-book-txt">
+            <img src="pic/index/wishimg.jpg" alt="" class="wish-img">   
+       
+            <ul class="wish-slides">
+                <input type="radio" id="control-1" name="control" checked>
+                <input type="radio" id="control-2" name="control">
+                <input type="radio" id="control-3" name="control">
+                
+                <li class="wish-slide">
                     <span>- 來自台北市 -</span>
-                    <p>想收Switch 魔物獵人二手片，新片也可，二手優先</p>
-                </lix>
-                <lix class="wish-book-txt">
+                    <p>想收Switch 魔物獵人二手片
+                    新片也可，二手優先</p>
+                </li>
+                <li class="wish-slide">
                     <span>- 來自桃園市 -</span>
-                    <p>想收卡娜赫拉章魚燒造型18吋一對</p>
-                </lix>
-                <lix class="wish-book-txt">
+                    <p>想收Switch 魔物獵人二手片
+                    新片也可，二手優先</p>
+                </li>
+                <li class="wish-slide">
                     <span>- 來自台南市 -</span>
-                    <p>希望可以買到豆腐鯊等比抱枕</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自台北市 -</span>
-                    <p>想收Switch 魔物獵人二手片，新片也可，二手優先</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自桃園市 -</span>
-                    <p>想收卡娜赫拉章魚燒造型18吋一對</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自台南市 -</span>
-                    <p>希望可以買到豆腐鯊等比抱枕</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自台北市 -</span>
-                    <p>想收Switch 魔物獵人二手片，新片也可，二手優先</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自桃園市 -</span>
-                    <p>想收卡娜赫拉章魚燒造型18吋一對</p>
-                </lix>
-                <lix class="wish-book-txt">
-                    <span>- 來自台南市 -</span>
-                    <p>希望可以買到豆腐鯊等比抱枕</p>
-                </lix>
-            </ul>
-        <ulv>
+                    <p>想收Switch 魔物獵人二手片
+                    新片也可，二手優先</p>
+                </li>
+                
+                <div class="wish-controls-visible">
+                <label for="control-1"></label>
+                <label for="control-2"></label>
+                <label for="control-3"></label>
+                </div>
+            </ul> 
+        </div>
+        <a href="#"><button type="button">許願清單</button></a>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-inf">
+                <span>手手市集聯繫專線：02-12325678</span>
+                <span>手手市集聯繫信箱：abcdcba@gmail.com</span>
+                <span>手手市集辦公室地址：地球市太平洋區東東路1-3號</span>
+            </div>
+            <div class="footer-path">
+                <div class="footer-nav">
+                    <div class="footer-nav-a">
+                        <a href="#">預約攤位</a>
+                        <a href="#">商品預告</a>
+                        <a href="#">市集位置</a>
+                    </div>
+                    <div class="footer-nav-a">
+                        <a href="#">許願清單</a>
+                        <a href="#">市集募資</a>
+                    </div>
+                </div>
+                <div class="footer-community">
+                    <a href="">
+                        <img src="pic/index/line.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="pic/index/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="cr">&copy; 2021 Tibame CFD101</p>
+        </footer>
+        </div>
 </body>
 </html>
