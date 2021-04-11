@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約手手攤位</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <header>
+    <nav>
+        <a href="booking.html">預約攤位</a>
+        <a href="wish.html">許願清單</a>
+        <a href="product.html">商品預告</a>
+        <a href="fundraising.html">市場募資</a>
+        <a href="location.html">市集位置</a>
+    </nav>
+    <h1 class="logo">
+        <a href="index.html"><img src="pic/index/logo.png" alt=""></a>
+    </h1>
+    <div class="header-txt">
+    <h2>-預約攤位-</h2>
+    <span>家裡收納空間不夠</span>
+    <span>有超過一個月以上都用不到的物品，又不捨得丟</span>
+    <span>想要離開螢幕前，享受人際互動</span>
+    <span>覺得包裝郵寄麻煩</span>
+    <span>網購等很久又怕被騙，買了還不會操作</span>
+    </div>
+</header>
+
+<div class="step">
+    <h3>預約步驟</h3>
+    <ol>
+        <li>
+            <span>01</span><p>填寫表單，建議可以分享販售物品一件做為預告用，另可優先前往<a href="wish.html">許願清單</a>確認是否已有商品符合賣家的期待喔~</p>
+        </li>
+        <li>
+            <span>02</span><p>支付押金，押金只接受匯款，不提供信用卡服務，活動結束當天現場退款，請留意如有手續費需自行吸收。</p>
+        </li>
+        <li>
+            <span>03</span><p>前往信箱確認是否預約成功，24小時內未收到通知郵件，請與<a href="location.html">市集聯繫</a>，如若緊急，請勿使用訊息留言。</p>
+        </li>
+    </ol>
+</div>
+
+<div class="booking">
+    <img src="pic/booking/inputimg1.jpg" alt="">
+    <div class="booking-form">
+        <h3>預約攤位</h3>
+        <div class="booking-form-content">
+            <div class="booking-form-value sbs">
+                <span>預約人姓名：</span>
+                <input type="text">
+            </div>
+            <div class="booking-form-value sbs">
+                <span>預約人手機：</span>
+                <input placeholder="(或電話)">
+            </div>
+            <div class="booking-form-value">
+                <span>預約人E-mail：</span>
+                <input placeholder="需輸入包含@後完整的E-mail">
+            </div>
+            <div class="booking-form-select sbs">
+                <span>預約場次選擇</span>
+                <select>
+                    <option value="">選擇</option>
+                    <option value="">北部</option>
+                    <option value="">中部</option>
+                    <option value="">南部</option>
+                    <option value="">東部</option>
+                </select>
+            </div>
+            <div class="booking-form-select sbs">
+                <span>場次攤位選擇</span>
+                <select>
+                    <option value="">確認攤位編號</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">05</option>
+                    <option value="">06</option>
+                </select>
+            </div>
+            <div class="booking-form-select sbs">
+                <span>押金方式</span>
+                <select>
+                    <option value="">不提供信用卡支付</option>
+                    <option value="">現場</option>
+                    <option value="">匯款</option>
+                </select>
+            </div>
+            <div class="booking-form-select sbs">
+                <span>匯款方式</span>
+                <select>
+                    <option value="">確認銀行行號</option>
+                    <option value="">郵局</option>
+                    <option value="">中國信託</option>
+                    <option value="">合作金庫</option>
+                </select>
+            </div>
+        </div>
+        <button type="button">完成預約</button>
+    </div>
+</div>
+
+<div class="shspace">
+    <h3>攤位編號一覽</h3>
+    <div class="shspace-space">
+        <input type="radio" name="btn" id="taipei-btn-1" checked>
+        <input type="radio" name="btn" id="tainan-btn-2">
+        <input type="radio" name="btn" id="hinchu-btn-3">
+
+    <div class="shspace-img-btn">
+        <label for="taipei-btn-1">04/12-台北場</label>
+        <label for="tainan-btn-2">04/18-台南場</label>
+        <label for="hinchu-btn-3">04/20-新竹場</label>
+    </div>
+
+    <img src="pic/booking/space-taipei.png" alt="" class="shspace-img">
+    <img src="pic/booking/space-tainan.png" alt="" class="shspace-img">
+    <img src="pic/booking/space-hinchu.png" alt="" class="shspace-img">
+    </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+      <div class="footer-inf">
+          <span>手手市集聯繫專線：02-12325678</span>
+          <span>手手市集聯繫信箱：abcdcba@gmail.com</span>
+          <span>手手市集辦公室地址：地球市太平洋區東東路1-3號</span>
+      </div>
+      <div class="footer-path">
+          <div class="footer-nav">
+              <div class="footer-nav-a">
+                  <a href="booking.html">預約攤位</a>
+                  <a href="product.html">商品預告</a>
+                  <a href="location.html">市集位置</a>
+              </div>
+              <div class="footer-nav-a">
+                  <a href="wish.html">許願清單</a>
+                  <a href="fundraising.html">市集募資</a>
+              </div>
+          </div>
+          <div class="footer-community">
+              <a href="">
+                  <img src="pic/index/line.png" alt="">
+              </a>
+              <a href="">
+                  <img src="pic/index/facebook.png" alt="">
+              </a>
+          </div>
+      </div>
+      <p class="cr">&copy; 2021 Tibame CFD101</p>
+  </div>
+</footer>
 </body>
 </html>

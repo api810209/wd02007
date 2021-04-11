@@ -1,0 +1,211 @@
+h3{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #404040;
+}
+span, p, a{
+    font-family: 'Noto Serif TC', serif;
+}
+button{
+    width: 152px;
+    height: 40px;
+    outline: none;
+    background-color: rgba(19, 96, 50, 0.9);
+    border-style: none;
+    border-radius: 10px 0;
+    box-shadow: 2px 2px 5px #404040;
+    color: #fffaee;
+    text-align: right;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
+    padding-right: 20px;
+    position: relative;
+}
+button:hover{
+    top:0.1em;
+  }
+  button:active{
+    top:0.2em;
+    box-shadow: 2px 2px 5px #404040 inset,
+    -1px -1px 3px #404040;
+    background-color: rgba(19, 96, 50, 0.95);
+  }
+
+header{
+    background-image: url(../pic/wish/header.png);
+    height: 765px;
+    margin-bottom: 100px;
+}
+nav{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+nav a{
+    display: block;
+    margin: 30px 0px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fffaee;
+    text-shadow: 0 0 20px #404040;
+    font-size: 16px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color: #404040;
+    background-color: rgba(255, 250, 238, 0.5);
+    border-radius: 10px 0;
+    box-shadow: 0 0 10px #404040;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+header h2{
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #6f4f2b;
+    margin-bottom: 40px;
+}
+.header-txt{
+  margin-top: 50px;
+}
+.header-txt span{
+    text-align: center;
+    font-size: 20px;
+    color: #6f4f2b;
+    display: block;
+    margin: 20px auto;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wish{
+    width: 66.666666%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 70px;
+    overflow: auto;
+}
+
+.wish-board{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.wish-board:nth-of-type(even){
+    flex-direction: row-reverse;
+    background-color: #fffaee;
+}
+.wish-board-txt{
+    margin-left: 20px;
+    padding: 10px 0;
+}
+.wish-board:nth-of-type(even) .wish-board-txt{
+    margin:0 20px 0 0;
+}
+.wish-board-txt span{
+    font-size: 14px;
+    width: 100%;
+    color: #6f4f2b;
+}
+.wish-board-txt span:first-child{
+    padding-right: 10px;
+}
+.wish-board-txt p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #404040;
+}
+.wish-board-txt span+p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.form{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.form textarea{
+    width: 100%;
+    margin: auto;
+}
+.form-select{
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+.form-select-location{
+    margin-right: 20px;
+}
+.form button{
+    position: relative;
+    left: 35%;
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: #6f4f2b;
+    padding: 30px 0;
+    font-size: 18px;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 320px;
+}
+.footer-inf, .footer-path{
+    width: 50%;
+    box-sizing: border-box;
+}
+.footer-inf{
+    display: flex;
+    flex-direction: column;
+}
+.footer-inf span{
+    color: #b88919;
+    margin: 10px 0;
+}
+.footer-path{
+    display: flex;
+}
+.footer-nav-a{
+    padding: 10px 0;
+}
+.footer-nav-a a{
+    color: #b88919;
+    padding: 0 0 0 5px;
+}
+.footer-community{
+    position: relative;
+    bottom: 45px;
+    left: 30%;
+}
+.footer-community a{
+    padding-right: 20px;
+}
+p.cr{
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    color: #b88919;
+    font-size: 14px;
+}
