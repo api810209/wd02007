@@ -4,185 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在手手許願</title>
+    <title>手手市集</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/wish.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="booking.html">預約攤位</a>
-            <a href="wish.html">許願清單</a>
-            <a href="product.html">商品預告</a>
-            <a href="fundraising.html">市場募資</a>
-            <a href="#">市集位置</a>
-        </nav>
-        <h1 class="logo">
-            <a href="index.html"><img src="pic/index/logo.png" alt=""></a>
-        </h1>
-        <div class="header-txt">
-        <h2>-許願清單-</h2>
-        <span>家裡收納空間不夠</span>
-        <span>有超過一個月以上都用不到的物品，又不捨得丟</span>
-        <span>想要離開螢幕前，享受人際互動</span>
-        <span>覺得包裝郵寄麻煩</span>
-        <span>網購等很久又怕被騙，買了還不會操作</span>
+        <input type="checkbox" name="" id="menu-control">
+        <div class="menu">
+            <nav>
+                <h1><a href="index.html"><img src="pic/index/logo.png" alt="" class="logo"></a></h1>
+                <label for="menu-control" class="menu-btn">
+                    <img src="pic/index/hambur.png" alt="">
+                </label>
+                <ul>
+                    <li><a href="booking.html">預約攤位</a></li>
+                    <li><a href="wish.html">許願清單</a></li>
+                    <li><a href="product.html">商品預告</a></li>
+                    <li><a href="fundraising.html">市集募資</a></li>
+                    <li><a href="location.html">市集位置</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <div class="header-content-intro">
+                <p>家裡收納空間不夠<br><br>
+                    有超過一個月以上都用不到的物品，又不捨得丟<br><br>
+                    想要離開螢幕前，享受人際互動<br><br>
+                    覺得包裝郵寄麻煩<br>網購等很久，又怕被騙<br><br>
+                    買了不會操作...</p>
+            </div>
+
+            <div class="header-content-list">
+                <h2>許願留言板</h2>
+                <form action="" class="filter">
+                    <img src="pic/wish/icon.png" alt="">
+                    <label for="wish-class">分類查詢：</label>
+                    <select name="" id="wish-class">
+                        <option value="all">全部分類</option>
+                        <option value="toy">玩具類</option>
+                        <option value="furn">家飾類</option>
+                        <option value="tool">工具類</option>
+                        <option value="deco">飾品類</option>
+                        <option value="cloth">服飾類</option>
+                    </select>
+                </form>
+                <ul class="massage">
+                    <li class="class-control cloth">
+                        <span>-即將參與 台北04/12市集-<br></span>
+                        <span>#服飾類</span>
+                        <p>想收uniQ美戰粉色T，L號，需全新</p>
+                    </li>
+                    <li class="class-control toy">
+                        <span>-即將參與 桃園04/18市集-<br></span>
+                        <span>#玩具類</span>
+                        <p>想收魔物獵人switch二手片</p>
+                    </li>
+                    <li class="class-control toy">
+                        <span>-即將參與 台北04/12市集-<br></span>
+                        <span>#玩具類</span>
+                        <p>求割愛動森圖鑑日文版</p>
+                    </li>
+                    <li class="class-control toy">
+                        <span>-即將參與 新竹05/24市集-<br></span>
+                        <span>#玩具類</span>
+                        <p>希望有廚師兔雞18吋一對可以買</p>
+                    </li>
+                    <li class="class-control furn">
+                        <span>-即將參與 台北04/12市集-<br></span>
+                        <span>#家飾類</span>
+                        <p>想收家樂福過年發福抱枕一對，僅枕套就好</p>
+                    </li>
+                    <li class="class-control tool">
+                        <span>-即將參與 桃園04/18市集-<br></span>
+                        <span>#工具類</span>
+                        <p>請問有裸絲起子組嗎? 不想買新的</p>
+                    </li>
+                    <li class="class-control toy">
+                        <span>-即將參與 台北04/12市集-<br></span>
+                        <span>#玩具類</span>
+                        <p>求割愛動森圖鑑日文版</p>
+                    </li>
+                    <li class="class-control toy">
+                        <span>-即將參與 新竹05/24市集-<br></span>
+                        <span>#玩具類</span>
+                        <p>希望有廚師兔雞18吋一對可以買</p>
+                    </li>
+                    <li class="class-control cloth">
+                        <span>-即將參與 台北04/12市集-<br></span>
+                        <span>#服飾類</span>
+                        <p>想收CC的三眼怪鴨舌帽杏色的~</p>
+                    </li>
+                    <li class="class-control deco">
+                        <span>-即將參與 新竹05/24市集-<br></span>
+                        <span>#飾品類</span>
+                        <p>想收兔雞紀念幣耳環銀色或金色都可以</p>
+                    </li>
+                </ul>
+                <div class="list-page">
+                    <ol>
+                        <li class="here"><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">05</a></li>
+                        <li><a href="#">06</a></li>
+                        <li><a href="#">></a></li>
+                    </ol>
+                </div>
+                <div class="leaveMassage">
+                    <h2>許願留言</h2>
+                    <form action="" class="leave">
+                        <ul>
+                            <li class="sbs">
+                                <label for="leave-location">即將參與：</label>
+                                <select name="" id="leave-location">
+                                    <option value="必選">必選</option>
+                                    <option value="">台北04/12市集</option>
+                                    <option value="">桃園04/18市集</option>
+                                    <option value="">新竹05/24市集</option>
+                                </select>
+                            </li>
+                            <li class="sbs">
+                                <label for="leave-class">選擇分類：</label>
+                                <select name="" id="leave-class">
+                                    <option value="必選">必選</option>
+                                    <option value="">玩具類</option>
+                                    <option value="">家飾類</option>
+                                    <option value="">工具類</option>
+                                    <option value="">飾品類</option>
+                                    <option value="">服飾類</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="leave-text">許願內容：</label>
+                                <textarea id="leave-text"></textarea>
+                            </li>
+                        </ul>
+                        <button type="button" id="leaveBtn">確認許願</button>
+                    </form>
+                </div>
+            </div>
+            
         </div>
     </header>
     
-    <h3>許願留言板</h3>
-    <div class="wish">        
-        <div class="wish-board toy">
-            <img src="pic/wish/wishimg-1.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.18</span>
-                <span>-來自 台北市-</span>
-                <p>即將參與 04/20台北場</p>
-                <p>想收Switch 魔物獵人二手片，新片也可，二手優先</p>                
-            </div>    
-        </div>
-        <div class="wish-board decoration">
-            <img src="pic/wish/wishimg-2.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.18</span>
-                <span>-來自 台北市-</span>
-                <p>即將參與 04/12台北場</p>
-                <p>想收卡娜赫拉章魚燒造型18吋一對</p>               
-            </div>
-        </div>
-        <div class="wish-board tool">
-            <img src="pic/wish/wishimg-3.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.18</span>
-                <span>-來自 台中市-</span>
-                <p>即將參與 04/15台北場</p>
-                <p>想收巴拉巴拉全集+巴拉巴拉周邊M號限量白T</p>                
-            </div>
-        </div>
-        <div class="wish-board furniture">
-            <img src="pic/wish/wishimg-5.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.17</span>
-                <span>-來自 新竹市-</span>
-                <p>即將參與 04/18台北場</p>
-                <p>想收Switch 魔物獵人二手片，新片也可，二手優先，想收Switch 魔物獵人二手片，新片也可，二手優先</p>                
-            </div>
-        </div>
-        <div class="wish-board book">
-            <img src="pic/wish/wishimg-4.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.17</span>
-                <span>-來自 高雄市-</span>
-                <p>即將參與 04/12台北場</p>
-                <p>想收卡娜赫拉章魚燒造型18吋一對，想收卡娜赫拉章魚燒造型18吋一對，想收卡娜赫拉章魚燒造型18吋一對</p>               
-            </div>
-        </div>
-        <div class="wish-board toy">
-            <img src="pic/wish/wishimg-1.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.16</span>
-                <span>-來自 台北市-</span>
-                <p>即將參與 04/20台北場</p>
-                <p>想收Switch 魔物獵人二手片，新片也可，二手優先</p>                
-            </div>    
-        </div>
-        <div class="wish-board decoration">
-            <img src="pic/wish/wishimg-2.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.16</span>
-                <span>-來自 台北市-</span>
-                <p>即將參與 04/12台北場</p>
-                <p>想收卡娜赫拉章魚燒造型18吋一對</p>               
-            </div>
-        </div>
-        <div class="wish-board tool">
-            <img src="pic/wish/wishimg-3.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.16</span>
-                <span>-來自 台中市-</span>
-                <p>即將參與 04/15台北場</p>
-                <p>想收巴拉巴拉全集+巴拉巴拉周邊M號限量白T</p>                
-            </div>
-        </div>
-        <div class="wish-board furniture">
-            <img src="pic/wish/wishimg-5.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.15</span>
-                <span>-來自 新竹市-</span>
-                <p>即將參與 04/18台北場</p>
-                <p>想收Switch 魔物獵人二手片，新片也可，二手優先，想收Switch 魔物獵人二手片，新片也可，二手優先</p>                
-            </div>
-        </div>
-        <div class="wish-board book">
-            <img src="pic/wish/wishimg-4.jpg" alt="">
-            <div class="wish-board-txt">
-                <span>2021.03.15</span>
-                <span>-來自 高雄市-</span>
-                <p>即將參與 04/12台北場</p>
-                <p>想收卡娜赫拉章魚燒造型18吋一對，想收卡娜赫拉章魚燒造型18吋一對，想收卡娜赫拉章魚燒造型18吋一對</p>               
-            </div>
-        </div>
-    </div>
-
-    <div class="form">
-        <textarea name="" id="" cols="60" rows="10"></textarea>
-        <div class="form-select">
-            <div class="form-select-location sbs">
-                <span>來自</span>
-                <select name="" id="">
-                    <option value="">選擇所在地區</option>
-                    <option value="">台北市</option>
-                    <option value="">台北市</option>
-                    <option value="">台北市</option>
-                    <option value="">台北市</option>
-                </select>
-            </div>
-            <div class="form-select-session sbs">
-                <span>即將參與</span>
-                <select name="" id="">
-                    <option value="">選擇參與市集場次</option>
-                    <option value="">04/12台北場</option>
-                    <option value="">04/12台北場</option>
-                    <option value="">04/12台北場</option>
-                    <option value="">04/12台北場</option>
-                </select>
-            </div>
-        </div>
-        <button type="button">送出許願</button>
-    </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-inf">
-                <span>手手市集聯繫專線：02-12325678</span>
-                <span>手手市集聯繫信箱：abcdcba@gmail.com</span>
-                <span>手手市集辦公室地址：地球市太平洋區東東路1-3號</span>
-            </div>
-            <div class="footer-path">
-                <div class="footer-nav">
-                    <div class="footer-nav-a">
-                        <a href="booking.html">預約攤位</a>
-                        <a href="product.html">商品預告</a>
-                        <a href="#">市集位置</a>
-                    </div>
-                    <div class="footer-nav-a">
-                        <a href="wish.html">許願清單</a>
-                        <a href="fundraising.html">市集募資</a>
-                    </div>
-                </div>
-                <div class="footer-community">
-                    <a href="">
-                        <img src="pic/index/line.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="pic/index/facebook.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <p class="cr">&copy; 2021 Tibame CFD101</p>
+        <div class="footer-inf">
+            <ul>
+                <li><span>手手市集聯繫專線：<br>02-12325678</span></li>
+                <li><span>手手市集聯繫信箱：<br>abcdcba@gmail.com</span></li>
+                <li><span>手手市集辦公室：<br>地球市太平洋區東東路1-3號</span></li>
+                <li><span class="cr">&copy; 2021 Tibame CFD101</span></li>
+            </ul>
+        </div>
+        <div class="footer-community">
+            <a href="#">
+                <img src="pic/index/line.png" alt="">
+            </a>
+            <a href="#">
+                <img src="pic/index/facebook.png" alt="">
+            </a>
         </div>
     </footer>
+
+    <script src="js/wish.js"></script>
 </body>
 </html>

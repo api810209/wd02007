@@ -1,205 +1,308 @@
-h3{
-    font-family: 'Noto Serif TC', serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: #404040;
-}
-span, p, a{
+h2, h3, h4, span, a, p, button, label{
     font-family: 'Noto Serif TC', serif;
 }
-button{
-    width: 152px;
-    height: 40px;
-    background-color: rgba(19, 96, 50, 0.9);
-    border-style: none;
-    border-radius: 10px 0;
-    box-shadow: 2px 2px 5px #404040;
-    color: #fffaee;
-    text-align: right;
-    font-family: 'Noto Serif TC', serif;
-    font-size: 16px;
-    padding-right: 20px;
+h2{
+    font-size: 28px;
+    color: #3F3327;
+}
+
+.header-content-intro,
+.header-content-shplan,
+.elseplan{
+  margin-bottom: 50px;
 }
 
 header{
-    background-image: url(../pic/fundraising/header.png);
-    height: 765px;
-    margin-bottom: 100px;
+  width: 100%;
+  position: relative;
+}
+#menu-control{
+  position: fixed;
+  top: 0;
+  z-index: -99;
+  opacity: 0;
+}
+.menu{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
 }
 nav{
-    width: 1280px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+  position: relative;
+  height: 10vh;
 }
-nav a{
-    display: block;
-    margin: 30px 0px;
-    padding: 10px;
-    text-decoration: none;
-    color: #fffaee;
-    text-shadow: 0 0 20px #404040;
-    font-size: 16px;
-    font-weight: bolder;
+h1{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: #F6F7BD;
+  padding: 10px 0;
 }
-nav a:hover{
-    color: #404040;
-    background-color: rgba(255, 250, 238, 0.5);
-    border-radius: 10px 0;
-    box-shadow: 0 0 10px #404040;
+.menu-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 50px;
+  opacity: .3;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+nav ul{
+  position: relative;
+  z-index: 1;
+  top: -100vh ;
+  padding: 20px 0;
+  transition: top 1.5s;
+  background-color: #80BCA3;
 }
-header h2{
-    text-align: center;
-    font-family: 'Noto Serif TC', serif;
-    font-size: 36px;
-    font-weight: 900;
-    color: #6f4f2b;
-    margin-bottom: 40px;
+nav li{
+  padding: 20px 0;
+  text-align: center;
 }
-.header-txt{
-  margin-top: 50px;
+nav li+li::before{
+  content: '';
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -20px;
+  width: 10px;
+  height: 1px;
+  background-color: #F6F7BD;
 }
-.header-txt span{
-    text-align: center;
-    font-size: 20px;
-    color: #6f4f2b;
-    display: block;
-    margin: 20px auto;
+nav li a{
+  text-decoration: none;
+  color: #F6F7BD;
+  font-size: 14px;
+  font-weight: 200;
 }
-
-.preface{
-    width: 1280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 100px;
-}
-.preface span{
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #404040;
-}
-.preface p{
-    width: 500px;
-    font-size: 14px;
-    text-align: center;
-    color: #6f4f2b;
-    line-height: 20px;
+#menu-control:checked ~.menu nav ul{
+  top: 0;
 }
 
-.shplan{
-    display: flex;
-    margin-bottom: 100px;
+.header-content-intro{
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-color: #F6F7BD;
 }
-.shplan-account{
-    position: relative;
+.header-content-intro p{
+  text-align: center;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  width: 70%;
+  margin: auto;
+  padding-top: 90px;
+  color: #3F3327;
 }
-.shplan-account-txt{
-    position: absolute;
-    bottom: 100px;
-    left: 60%;
+
+.header-content-shplan h2{
+  margin-left: 10%;
+  margin-bottom: 30px;
 }
-.shplan-account-txt span{
-    font-size: 20px;
-    color: #fffaee;
+section.planA,
+section.planB{
+  position: relative;
+  width: 80%;
+  padding: 100px 0;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: white;
+  transition: 1s;
+  overflow: hidden;
 }
-.shplan-account-txt p::before{
-    content: "";
-    width: 200px;
-    height: 1px;
-    background-color: #fffaee;
-    display: block;
-    margin-bottom: 20px;
+section.planA img.money,
+section.planB img.money{
+  position: absolute;
+  bottom: 100vh;
+  width: 100%;
+  transition: 5s;
 }
-.shplan-account-txt p{
-    font-size: 16px;
-    line-height: 20px;
-    color: #fffaee;
-    margin-top: 5px;
+section.planA:hover,
+section.planB:hover{
+  background-color: rgba(63, 51, 39, 0.1);
 }
-.shplan-equipment{
-    margin-left: 60px;
-    position: relative;
+section.planA:hover img.money,
+section.planB:hover img.money{
+  bottom: -100vh;
 }
-.shplan-equipment-txt{
-    position: absolute;
-    bottom: 100px;
-    left: 50px;
+section.planA img+img,
+section.planB img+img{
+  width: 100%;
+  margin-bottom: 20px;
 }
-.shplan-equipment-txt span{
-    font-size: 20px;
-    font-weight: bold;
-    color: #404040;
+section.planA h3,
+section.planB h3,
+section.planA p,
+section.planB p{
+  padding: 0 10px;
 }
-.shplan-equipment-txt p::before{
-    content: "";
-    width: 200px;
-    height: 1px;
-    background-color: #404040;
-    display: block;
-    margin-bottom: 20px;
+section.planA h3,
+section.planB h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #BF4D28;
 }
-.shplan-equipment-txt p{
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 20px;
-    color: #404040;
-    margin-top: 5px;
+section.planA p,
+section.planB p{
+  line-height: 24px;
+  color: #404040;
+}
+
+.elseplan{
+  margin-bottom: 0;
+  padding: 50px 0 100px 0;
+  background-color: rgba(246, 247, 189, 0.5);
+}
+.elseplan h2{
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+.elseplan ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.elseplan li{
+  width: 45%;
+}
+.elseplan li img{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.elseplan li img:hover{
+  opacity: 0.7;
+}
+.elseplan li h3{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #BF4D28;
+}
+.elseplan p{
+  text-align: center;
+  color: #404040;
 }
 
 footer{
-    background-color: #6f4f2b;
-    padding: 30px 0;
-    font-size: 18px;
-}
-.footer-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 320px;
-}
-.footer-inf, .footer-path{
-    width: 50%;
-    box-sizing: border-box;
+  background-color: #BF4D28;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .footer-inf{
-    display: flex;
-    flex-direction: column;
+  width: 80%;
 }
-.footer-inf span{
-    color: #b88919;
-    margin: 10px 0;
+.footer-inf ul li+li{
+  margin-top: 20px;
 }
-.footer-path{
-    display: flex;
-}
-.footer-nav-a{
-    padding: 10px 0;
-}
-.footer-nav-a a{
-    color: #b88919;
-    padding: 0 0 0 5px;
+.footer-inf li span{
+  color: #F6F7BD;
+  font-size: 16px;
+  line-height: 20px;
 }
 .footer-community{
-    position: relative;
-    bottom: 45px;
-    left: 30%;
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: -40px;
+  right: 10%;
 }
-.footer-community a{
-    padding-right: 20px;
+.footer-community a:first-of-type{
+  padding-right: 20px;
 }
-p.cr{
+
+@media screen and (min-width:1200px){
+  h1{
+    margin-right: 2vw;
+    background-color: transparent;    
+  }
+  h2{
     text-align: center;
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    color: #b88919;
-    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .menu-btn{
+    display: none;
+  }
+  nav ul{
+    top: 60vh;
+    padding: 0;
+    background-color: transparent;
+    width: 10vw;
+  }
+  nav li{
+    padding: 10px 0;
+    padding-left: 3vw;
+    text-align: unset;
+  }
+  nav li a{
+    position: relative;
+    left: 0;
+    color: #80BCA3;
+  }
+  nav li a:hover{
+    left: 5px;
+    color: #F5BC1A;
+  }
+
+  .header-content{
+    display: flex;
+  }
+  .header-content-intro{
+    width: 49vw;
+    height: 100vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+  .header-content-intro p{
+    width: 50%;
+    padding-top: 0;
+  }
+
+  .header-content-shplan{
+    margin-top: 60PX;
+  }
+  .header-content-shplan h2{
+    margin-left: 0;
+  }
+  section.planA,
+  section.planB{
+    width: 50%;
+    text-align: center;
+  }
+  section.planA img,
+  section.planB img{
+    width: 50%;
+  }
+
+  .elseplan h2{
+    margin-left: 0;
+  }
+  .elseplan li{
+    width: 23%;
+  }
+
+  footer{
+    padding: 30px 0;
+  }
+  .footer-inf ul{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-inf ul li+li{
+    margin-top: 0;
+    margin-left: 50px;
+  }
 }

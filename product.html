@@ -4,215 +4,274 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手手商品預告</title>
+    <title>手手市集</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <nav>
-            <a href="booking.html">預約攤位</a>
-            <a href="wish.html">許願清單</a>
-            <a href="product.html">商品預告</a>
-            <a href="fundraising.html">市場募資</a>
-            <a href="location.html">市集位置</a>
-        </nav>
-        <h1 class="logo">
-            <a href="index.html"><img src="pic/index/logo.png" alt=""></a>
-        </h1>
-        <div class="header-txt">
-        <h2>-商品預告-</h2>
-        <span>家裡收納空間不夠</span>
-        <span>有超過一個月以上都用不到的物品，又不捨得丟</span>
-        <span>想要離開螢幕前，享受人際互動</span>
-        <span>覺得包裝郵寄麻煩</span>
-        <span>網購等很久又怕被騙，買了還不會操作</span>
+        <input type="checkbox" name="" id="menu-control">
+        <div class="menu">
+            <nav>
+                <h1><a href="index.html"><img src="pic/index/logo.png" alt="" class="logo"></a></h1>
+                <label for="menu-control" class="menu-btn">
+                    <img src="pic/index/hambur.png" alt="">
+                </label>
+                <ul>
+                    <li><a href="booking.html">預約攤位</a></li>
+                    <li><a href="wish.html">許願清單</a></li>
+                    <li><a href="product.html">商品預告</a></li>
+                    <li><a href="fundraising.html">市集募資</a></li>
+                    <li><a href="location.html">市集位置</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <div class="header-content-intro">
+                <p>家裡收納空間不夠<br><br>
+                    有超過一個月以上都用不到的物品，又不捨得丟<br><br>
+                    想要離開螢幕前，享受人際互動<br><br>
+                    覺得包裝郵寄麻煩<br>網購等很久，又怕被騙<br><br>
+                    買了不會操作...</p>
+            </div>
+            <div class="header-content-featured">
+                <h2>商品精選</h2>
+                <div class="featured-card">
+                    <img src="pic/product/featureimg-1.jpg" alt="">
+                    <span>#玩具類</span>
+                    <h3>小朋友的小朋友娃娃</h3>
+                    <button class="detailBtn">查看細節</button>
+                    <div class="detail">
+                        <span>數量：1對</span>
+                        <span>尺寸：12吋</span>
+                        <span>價格：$480</span>
+                        <span>其他：目前5歲，有定期丟洗衣機，衣服可拆換</span>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <img src="pic/product/featureimg-2.jpg" alt="">
+                    <span>#飾品類</span>
+                    <h3>巨人的項鍊</h3>
+                    <button class="detailBtn">查看細節</button>
+                    <div class="detail">
+                        <span>數量：1條</span>
+                        <span>尺寸：長鏈</span>
+                        <span>價格：$120</span>
+                        <span>其他：仿古銅，有金屬過敏勿買</span>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <img src="pic/product/featureimg-3.jpg" alt="">
+                    <span>#工具類</span>
+                    <h3>不知道是哪一支的工具組</h3>
+                    <button class="detailBtn">查看細節</button>
+                    <div class="detail">
+                        <span>數量：1組</span>
+                        <span>尺寸：15cm</span>
+                        <span>價格：$200</span>
+                        <span>其他：好啦，其實總共有5支啦，槌子、鉗子、螺絲起子、剪刀、捲線器</span>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <img src="pic/product/featureimg-5.jpg" alt="">
+                    <span>#家飾類</span>
+                    <h3>有很多燈泡的鏡子</h3>
+                    <button class="detailBtn">查看細節</button>
+                    <div class="detail">
+                        <span>數量：1個</span>
+                        <span>尺寸：180cm</span>
+                        <span>價格：$900</span>
+                        <span>其他：燈泡都燒壞了，請自行更換，插電的</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    
+    <section class="description">
+        <h2>預告投稿</h2>
+        <p>如已報名成為市集攤商，歡迎來信投稿商品預告，增加您賣出的機會喔~<br><br>手手市集聯繫信箱：<br>abcdcba@gmail.com
+        </p>
+    </section>
 
     <div class="product">
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg1.jpg" alt="">
-                <span>04/12台北場出沒</span>
+        <h2>商品一覽</h2>
+        <form action="" class="filter">
+            <img src="pic/wish/icon.png" alt="">
+            <label for="product-class">分類查詢：</label>
+            <select name="" id="product-class">
+                <option value="">全部分類</option>
+                <option value="">玩具類</option>
+                <option value="">家飾類</option>
+                <option value="">工具類</option>
+                <option value="">飾品類</option>
+                <option value="">服飾類</option>
+            </select>
+        </form>
+        <div class="product-card">
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-1.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>茶色香氛燭台</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg2.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-2.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色色鉛筆</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#玩具類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg3.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-3.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色英文巧拼</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg4.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-4.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>15吋 BGHG筆電</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#工具類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg5.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-5.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>塑膠陶瓷盤子</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg1.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-1.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>茶色香氛燭台</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg2.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-2.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色色鉛筆</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#玩具類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg3.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-3.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色英文巧拼</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg4.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-4.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>15吋 BGHG筆電</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#工具類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg5.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-5.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>塑膠陶瓷盤子</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div> 
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg1.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-1.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>茶色香氛燭台</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>        
-        <div class="product-cards">
-            <div class="product-cards-img">
-                <img src="pic/product/productimg2.jpg" alt="">
-                <span>04/12台北場出沒</span>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-2.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色色鉛筆</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#玩具類</span>
+                </section>
             </div>
-            <section class="product-cards-section">
-                <h4>商品名稱</h4>
-                <p>非常本帖飯店更是配合身邊所需圖書畢業生售價協議，數碼楠雅這段。</p>
-                <span>$1,200</span>
-            </section>
-        </div>         
-    </div>
-
-    <div class="page">
-        <ul>
-            <li><a href="#">01</a></li>
-            <li><a href="#">02</a></li>
-            <li><a href="#">03</a></li>
-            <li><a href="#">04</a></li>
-            <li><a href="#">05</a></li>
-            <li><a href="#">06</a></li>
-            <li><a href="#">07</a></li>
-            <li><a href="#">08</a></li>
-            <li><a href="#">09</a></li>
-            <li><a href="#">10</a></li>
-            <li><a href="#"> > </a></li>
-        </ul>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-3.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>彩色英文巧拼</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
+            </div>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-4.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>15吋 BGHG筆電</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#工具類</span>
+                </section>
+            </div>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-5.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>塑膠陶瓷盤子</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
+            </div>
+            <div class="product-card-intro">
+                <img src="pic/product/productimg-1.jpg" alt="">
+                <section class="product-card-project">
+                    <h3>茶色香氛燭台</h3>
+                    <span>-台北04/12市集-<br></span>
+                    <span>#家飾類</span>
+                </section>
+            </div>
+        </div>
+        <div class="product-page">
+            <ol>
+                <li class="here"><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li><a href="#">04</a></li>
+                <li><a href="#">05</a></li>
+                <li><a href="#">06</a></li>
+                <li><a href="#">></a></li>
+            </ol>
+        </div>
     </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-inf">
-                <span>手手市集聯繫專線：02-12325678</span>
-                <span>手手市集聯繫信箱：abcdcba@gmail.com</span>
-                <span>手手市集辦公室地址：地球市太平洋區東東路1-3號</span>
-            </div>
-            <div class="footer-path">
-                <div class="footer-nav">
-                    <div class="footer-nav-a">
-                        <a href="booking.html">預約攤位</a>
-                        <a href="product.html">商品預告</a>
-                        <a href="location.html">市集位置</a>
-                    </div>
-                    <div class="footer-nav-a">
-                        <a href="wish.html">許願清單</a>
-                        <a href="fundraising.html">市集募資</a>
-                    </div>
-                </div>
-                <div class="footer-community">
-                    <a href="">
-                        <img src="pic/index/line.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="pic/index/facebook.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <p class="cr">&copy; 2021 Tibame CFD101</p>
+        <div class="footer-inf">
+            <ul>
+                <li><span>手手市集聯繫專線：<br>02-12325678</span></li>
+                <li><span>手手市集聯繫信箱：<br>abcdcba@gmail.com</span></li>
+                <li><span>手手市集辦公室：<br>地球市太平洋區東東路1-3號</span></li>
+            </ul>
+        </div>
+        <div class="footer-community">
+            <a href="#">
+                <img src="pic/index/line.png" alt="">
+            </a>
+            <a href="#">
+                <img src="pic/index/facebook.png" alt="">
+            </a>
         </div>
     </footer>
+
+    <!-- <script src="js/product.js"></script> -->
 </body>
 </html>

@@ -3,10 +3,13 @@
 　　 咖 #6f4f2b / 111 79 43
 
 輔色 淡黃 #f7d060 / 247 208 96
+　　 深咖 #211202 / 33 18 2
 
 文字 深灰 #404040 / 64 64 64
 　　 暗金 #b88919 / 184 137 25
 　　 米白 #fffaee / 255 250 238
+
+https://www.colourlovers.com/palette/953498/Headache
 
 14 16 18 20 30 36px
 
@@ -14,3 +17,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 
 font-family: 'Noto Serif TC', serif;
+
+https://api810209.github.io/wd02007/index.html
+
+薄荷 #7DB69E / 125 182 158
+黃色 #F5BC1A / 245 188 26
+深咖 #3F3327 / 63 51 39
+橘色 #BF4D28 / 191 77 40
+淺黃 #F6F7BD / 246 247 189
